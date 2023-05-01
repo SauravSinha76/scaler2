@@ -5,7 +5,7 @@ def solve(A):
         A[i] += A[i-1]
 
     for i in range(n):
-        if i ==0 and A[n-1] == A[i]:
+        if i ==0 and A[n-1] - A[i] == 0:
             return 0
         elif A[i-1] == A[n-1] - A[i]:
             return i
