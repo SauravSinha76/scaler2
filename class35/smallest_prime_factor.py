@@ -5,7 +5,7 @@ def solve(A):
     i = 2
     while i * i <= A:
         if num[i] == i:
-            for j in range(i*i , A+1, i):
+            for j in range(i*i, A+1, i):
                 num[j] = i
         i += 1
     for i in range(A+1):
